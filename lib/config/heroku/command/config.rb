@@ -12,7 +12,7 @@ class Heroku::Command::Config
     end
     target_app = args.shift
     vars = api.get_config_vars(app).body.select {|key, value| args.include?(key.to_s)}
-    vars.each {|k, v| puts "Copying #{k}"
+    vars.each {|k, v| puts "Copying #{k}"}
 
     api.put_config_vars(target_app, vars)
   end
