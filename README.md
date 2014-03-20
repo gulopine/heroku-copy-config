@@ -1,4 +1,4 @@
-# heroku-config
+# heroku-copy-config
 
 Simple command to copy config vars from one Heroku app to another.
 
@@ -10,6 +10,9 @@ Add the heroku gem plugin:
     Installing heroku-copy-config... done
 
 ## Usage
+
+    heroku config:copy <target app name> CONFIGVAR1 [CONFIGVAR2...]
+    
 
     $ heroku config:copy my-other-app BROKER_URL
     Copying BROKER_URL
